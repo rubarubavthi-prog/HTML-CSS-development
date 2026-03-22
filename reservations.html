@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservations | Veridian Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">✦</span>
+                <span>VERIDIAN</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="menu.html" class="nav-link">Menu</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="reservations.html" class="nav-link active">Reservations</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <a href="reservations.html" class="book-btn">Book a Table</a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Reservations</h1>
+            <p>Secure your table for an unforgettable dining experience</p>
+        </div>
+    </section>
+
+    <section class="reservation-page">
+        <div class="container">
+            <div class="reservation-wrapper-full">
+                <div class="reservation-info-full">
+                    <h2>Join Us</h2>
+                    <p>We look forward to welcoming you to Veridian. Reservations are recommended for dinner service and can be made online or by phone.</p>
+                    
+                    <div class="hours-full">
+                        <h3>Hours of Operation</h3>
+                        <div class="hours-list">
+                            <div><strong>Tuesday - Friday</strong><br>5:00 PM - 10:30 PM</div>
+                            <div><strong>Saturday</strong><br>4:30 PM - 11:00 PM</div>
+                            <div><strong>Sunday - Monday</strong><br>Closed</div>
+                        </div>
+                    </div>
+
+                    <div class="contact-full">
+                        <h3>Contact Us</h3>
+                        <p><i class="fas fa-phone"></i> +1 (555) 872-3409</p>
+                        <p><i class="fas fa-envelope"></i> reservations@veridian.com</p>
+                    </div>
+
+                    <div class="policy">
+                        <h3>Cancellation Policy</h3>
+                        <p>We require 24-hour notice for cancellations. For parties of 6 or more, a credit card is required to secure the reservation.</p>
+                    </div>
+                </div>
+
+                <div class="reservation-form-full">
+                    <form id="reservationForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="date" placeholder="Date" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="time" placeholder="Time" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="number" placeholder="Number of Guests" min="1" max="12" required>
+                            </div>
+                            <div class="form-group">
+                                <select>
+                                    <option>Dining Room</option>
+                                    <option>Chef's Table</option>
+                                    <option>Private Lounge</option>
+                                    <option>Outdoor Terrace</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea rows="4" placeholder="Special Requests (dietary restrictions, allergies, special occasions)"></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary full-width">Complete Reservation</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">VERIDIAN</div>
+                    <p>Modern coastal cuisine in an atmosphere of refined elegance.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="reservations.html">Reservations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 42 Harbor Street</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 872-3409</li>
+                        <li><i class="fas fa-envelope"></i> hello@veridian.com</li>
+                    </ul>
+                </div>
+                <div class="footer-hours">
+                    <h4>Hours</h4>
+                    <p><strong>Dinner</strong><br>Tue-Fri: 5pm - 10:30pm<br>Sat: 4:30pm - 11pm</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Veridian Restaurant. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        document.getElementById('reservationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your reservation! We will confirm your booking shortly.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
