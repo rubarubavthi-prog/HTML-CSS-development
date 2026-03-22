@@ -1,120 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <title>EMERALD TABLE | Dark Navy Bistro</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veridian | Modern Coastal Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <div class="container">
     <!-- Navigation -->
-    <header>
-      <div class="navbar">
-        <div class="logo">EMERALD TABLE <span>✦ fine dining</span></div>
-        <ul class="nav-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Menu</a></li>
-          <li><a href="#">Reservations</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div>
-    </header>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">✦</span>
+                <span>VERIDIAN</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="menu.html" class="nav-link">Menu</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="reservations.html" class="nav-link">Reservations</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <a href="reservations.html" class="book-btn">Book a Table</a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
 
-    <!-- Hero Section - Strong Box Model with Animation -->
+    <!-- Hero Section -->
     <section class="hero">
-      <h1>Where Navy Meets<br>Dark Green Elegance</h1>
-      <p>Experience culinary mastery wrapped in a luxurious ambiance. Every plate tells a story — crafted with passion, served with soul.</p>
-      <button class="hero-btn" aria-label="Discover menu">DISCOVER MENU →</button>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge">Est. 2024</div>
+            <h1 class="hero-title">Where Coastal<br>Elegance Meets Fire</h1>
+            <p class="hero-subtitle">Experience culinary artistry in an atmosphere of refined sophistication</p>
+            <div class="hero-buttons">
+                <a href="menu.html" class="btn-primary">Explore Menu</a>
+                <a href="reservations.html" class="btn-secondary">Reserve Experience</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll</span>
+            <i class="fas fa-arrow-down"></i>
+        </div>
     </section>
 
-    <!-- Feature Cards - focus on box model (padding, margin, border, shadow) and hover animations -->
-    <h2 class="section-title">The Art of Dining</h2>
-    <div class="cards-grid">
-      <div class="card">
-        <div class="card-icon">🌿</div>
-        <h3>Farm Fresh</h3>
-        <p>Locally sourced ingredients from organic farms. Every leaf, every herb respects the deep green ethos.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon">🍷</div>
-        <h3>Sommelier’s List</h3>
-        <p>Curated wines that complement the navy & emerald journey. Perfect pairing for every course.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon">👨‍🍳</div>
-        <h3>Michelin Style</h3>
-        <p>Creative techniques & plating that elevate your senses. Art on a plate, elegance in every bite.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon">✨</div>
-        <h3>Exclusive Vibes</h3>
-        <p>Intimate lighting, navy velvet, and dark green accents — a perfect box of harmony.</p>
-      </div>
-    </div>
-
-    <!-- Menu Preview - Border animation + interactive box model -->
-    <div class="menu-preview">
-      <h2 style="font-size: 2rem; margin-bottom: 0.5rem;">⚡ Chef's Signature</h2>
-      <p style="margin-bottom: 1rem;">Seasonal inspirations from the deep forest & coast</p>
-      <div class="menu-items">
-        <div class="menu-item">
-          <h4>Emerald Risotto</h4>
-          <p>Basil pesto, asparagus, aged parmesan</p>
-          <div class="price">$28</div>
+    <!-- Featured Dishes -->
+    <section class="featured">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Signature Collection</span>
+                <h2 class="section-title">Crafted to Perfection</h2>
+                <p class="section-subtitle">A seasonal journey through flavors that define our culinary identity</p>
+            </div>
+            <div class="featured-grid">
+                <div class="featured-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=400&h=500&fit=crop" alt="Seared Scallops">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Seared Dayboat Scallops</h3>
+                        <p>Brown butter emulsion • Cauliflower purée • Crispy sage</p>
+                        <div class="card-price">$38</div>
+                    </div>
+                </div>
+                <div class="featured-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1551248429-40975aa4de74?w=400&h=500&fit=crop" alt="Wagyu Steak">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>A5 Japanese Wagyu</h3>
+                        <p>Truffle potato • Charred onion • Red wine reduction</p>
+                        <div class="card-price">$89</div>
+                    </div>
+                </div>
+                <div class="featured-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=400&h=500&fit=crop" alt="Lobster Risotto">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Maine Lobster Risotto</h3>
+                        <p>Saffron arborio • Lemon confit • Micro herbs</p>
+                        <div class="card-price">$46</div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-btn-wrap">
+                <a href="menu.html" class="btn-outline">View Full Menu <i class="fas fa-arrow-right"></i></a>
+            </div>
         </div>
-        <div class="menu-item">
-          <h4>Navy Seabass</h4>
-          <p>Citrus beurre blanc, seaweed caviar</p>
-          <div class="price">$39</div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-wrapper">
+                <h3>Join Our Culinary Circle</h3>
+                <p>Be the first to know about seasonal menus, exclusive events, and chef collaborations.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
         </div>
-        <div class="menu-item">
-          <h4>Dark Cocoa Tart</h4>
-          <p>Matcha cream, black sesame tuile</p>
-          <div class="price">$14</div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">VERIDIAN</div>
+                    <p>Modern coastal cuisine in an atmosphere of refined elegance. Where every meal becomes a memory.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="reservations.html">Reservations</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 42 Harbor Street, Downtown</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 872-3409</li>
+                        <li><i class="fas fa-envelope"></i> hello@veridian.com</li>
+                    </ul>
+                </div>
+                <div class="footer-hours">
+                    <h4>Hours</h4>
+                    <p><strong>Dinner</strong><br>Tue-Fri: 5pm - 10:30pm<br>Sat: 4:30pm - 11pm</p>
+                    <p><strong>Bar</strong><br>Tue-Sat: 5pm - 12am</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Veridian Restaurant. All rights reserved.</p>
+            </div>
         </div>
-      </div>
-    </div>
-
-    <!-- Box Model Showcase: special focus on border, margin, padding creative examples -->
-    <h2 class="section-title">Box Model Experience</h2>
-    <div class="feature-box">
-      <div class="box-demo">
-        <h3>Padding Perfection</h3>
-        <p>Inner space creates calm. Every element breathes with generous padding & rhythm.</p>
-        <div class="highlight">padding: 1.8rem</div>
-      </div>
-      <div class="box-demo">
-        <h3>Margin Flow</h3>
-        <p>Strategic gaps between cards & sections deliver visual balance and elegance.</p>
-        <div class="highlight">margin + gap system</div>
-      </div>
-      <div class="box-demo">
-        <h3>Border Magic</h3>
-        <p>Animated borders, glow effects & left accent lines create a luxury identity.</p>
-        <div class="highlight">border + transition</div>
-      </div>
-    </div>
-
-    <!-- Testimonial - Animated box with elegant border -->
-    <div class="testimonial">
-      <div class="quote">“The dark green & navy atmosphere felt like a hidden jewel. The attention to box model details — from card padding to border animations — mirrors the culinary precision.”</div>
-      <div class="author">— LUCIA M., Food Critic</div>
-    </div>
-
-    <!-- Extra animated banner: pure CSS animation on box -->
-    <div style="margin: 2rem 0; border-radius: 40px; background: #082622; padding: 1.2rem; text-align: center; border: 1px solid #2c7562; animation: borderGlide 6s infinite linear; background-size: 200% auto; background-image: linear-gradient(90deg, #103d35, #1a5548, #103d35); transition: 0.3s;">
-      <p style="font-weight: 600; letter-spacing: 1px;">✨ Limited offer: Complimentary sparkling toast with reservation ✨</p>
-    </div>
-
-    <!-- Footer - solid box model closure -->
-    <footer>
-      <div class="footer-content">
-        <p>🌿 EMERALD TABLE | 42 Navy Street, Culinary District</p>
-        <p>📞 (555) 782-3409  |  reservations@emeraldtable.com</p>
-        <p style="font-size: 0.8rem; margin-top: 0.8rem;">© 2025 — Where dark green & navy blue create timeless moments</p>
-      </div>
     </footer>
-  </div>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+    </script>
 </body>
 </html>
